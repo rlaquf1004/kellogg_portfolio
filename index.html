@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형_켈로그</title>
+    <script src="https://kit.fontawesome.com/e4d2c04c78.js" crossorigin="anonymous"></script>
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+
+    <!--햄버거 목록 스크립트-->
+
+    <!--599px--->
+    <script>
+
+        $(document).ready(function () {
+            $(".menu_open_btn").click(function () {
+                $("#ul_wrap, .sns_box").slideToggle();
+            });
+
+            $(window).resize(function () {
+                if (window.innerWidth >= 1260) {
+                    $("#ul_wrap, .sns_box").show();
+                }
+
+                if (window.innerWidth <= 1259) {
+                    $("#ul_wrap, .sns_box").hide();
+                }
+            });
+        });
+    </script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="css/reset.css" rel="stylesheet">
+
+    <link href="css/common_main_599.css" rel="stylesheet">
+    <link href="css/common_min_600.css" rel="stylesheet">
+    <link href="css/common_min_1260.css" rel="stylesheet">
+
+
+    <link href="css/main_max_599.css" rel="stylesheet">
+    <link href="css/main_min_600.css" rel="stylesheet">
+    <link href="css/main_min_1260.css" rel="stylesheet">
+
+
+
+
+    <!--헤더 영어 폰트 --->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@500&family=Cabin:wght@500&display=swap"
+        rel="stylesheet">
+
+    <!--제목 한글 폰트--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@500&family=Cabin:wght@500&family=Noto+Sans+KR:wght@700&display=swap"
+        rel="stylesheet">
+    <!----->
+
+
+
+
+
+
+    <style>
+        * {
+
+            box-sizing: border-box;
+
+        }
+
+        #wrap {
+            overflow: hidden;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div id="wrap">
+
+        <!--헤더-->
+        <div id="header_wrap">
+
+            <header>
+
+                <div class="box">
+                    <img src="img/header/header_img.png" alt="">
+                    <div id="header_in_box">
+
+                        <h1>
+                            <a href="#">
+                                <img src="img/header/logo.png">
+                            </a>
+                        </h1>
+
+                        <button type="button" class="menu_open_btn" title="전체메뉴 열기">
+                            <img src="https://www.kellogg.co.kr/Images/Common/img_header_open.png" alt="메뉴열기 버튼">
+                        </button>
+
+
+                        <div id="ul_wrap">
+                            <ul>
+                                <li><a href="sub.html">Our Food <i class="fa-solid fa-chevron-down icondown"></i></a></li>
+                                <li><a href="sub.html">Recipes</a></li>
+                                <li><a href="sub.html">Health & Nutrition</a></li>
+                                <li><a href="sub.html">Better Days</a></li>
+                                <li><a href="sub.html">Who we are <i class="fa-solid fa-chevron-down icondown"></i></a></li>
+                            </ul>
+
+
+
+                            <div class="sns_box">
+
+                                <a href="#"><img src="img/header/sns01.png"></a>
+                                <a href="#"><img src="img/header/sns02.png"></a>
+                                <a href="#"><img src="img/header/sns03.png"></a>
+
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+
+
+            </header>
+            <!--슬라이더-->
+            <div id="slider">
+                <div id="slider_img">
+                    <div id="text_img_relative_box">
+                        <div id="text_img"><img src="img/main/slider/s_text.png" alt="좋은 것만 드려요~"></div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+        <!---------------------------------------------------->
+
+        <!--메인1 뉴스-->
+        <div id="main1_news_wrap">
+            <div id="news_box">
+                <h1>켈로그의 새로운 소식!</h1>
+                <h3>켈로그의 신제품, 든든한 ‘브랜 그래놀라’를 출시합니다!</h3>
+                <img src="img/main/main_news/n1.jpg" alt="신제품사진">
+                <div id="text_box">
+                    <h2>국내 최고 밀기울로 만든<br> 푸레이크 제품!</h2>
+                    <p>오트 그래놀라와 블랙 통곡물을 합쳐<br> 식이섬유와 단백질, 비타민 b군이 풍부하고,<br> 바삭한 브랜 푸레이크로 재탄생 하다!</p>
+                    <button><a href="#">구매하기</a></button>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!---------------------------------------------------->
+
+        <!--메인2 켈로그 브랜드-->
+        <div id="main_2_kellogg_brand_wrap">
+
+            <img src="img/main/main_brand_cereal/b_nuts.png" alt="" id="nuts">
+
+            <div id="content_box2">
+
+                <h1>켈로그의 다양한 브랜드를 만나보세요</h1>
+                <h2>새로운 아침을 맞이하는 다양한 방법</h2>
+
+                <div class="brand">
+                    <a href="#">
+                        <img src="img/main/main_brand_cereal/b1.png" alt="클래식시리얼">
+                        <h2>클래식 시리얼</h2>
+                    </a>
+                </div>
+
+                <div class="brand">
+                    <a href="#">
+                        <img src="img/main/main_brand_cereal/b2.png" alt="초코시리얼">
+                        <h2>초코 시리얼</h2>
+                    </a>
+                </div>
+
+                <div class="brand">
+                    <a href="#">
+                        <img src="img/main/main_brand_cereal/b3.png" alt="그래놀라">
+                        <h2>그래놀라</h2>
+                    </a>
+                </div>
+
+                <div class="brand">
+                    <a href="#">
+                        <img src="img/main/main_brand_cereal/b4.png" alt="프로틴바">
+                        <h2>프로틴바</h2>
+                    </a>
+                </div>
+
+                <div class="brand">
+                    <a href="#">
+                        <img src="img/main/main_brand_cereal/b5.png" alt="켈로그바">
+                        <h2>켈로그바</h2>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!---------------------------------------------------->
+
+
+    <!--메인3 better 데이-->
+    <div id="main_3_better_days_wrap">
+        <div id="content_box3">
+            <img src="img/main/main_better_day/better_day.png" alt="베러데이 글 사진">
+            <div id="text_box">
+                <p>더 나은 내일을 만들기 위해 110여년 동안 기울여온 켈로그의 노력</p>
+                <a href="#"><span>더 알아보기</span></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------------------------------------->
+
+
+    <!--메인4 주력 상품들-->
+    <div id="main_4_product_wrap">
+        <div id="content_box4">
+
+            <div id="text_box">
+                <h1>켈로그 주력 상품들</h1>
+
+                <em><a href="#">더보기</a></em>
+                <a href="#"><i class="fa-solid fa-greater-than icon1"></i></a>
+                <h3>안 먹어본 사람이 없다는 인기상품!</h3>
+
+            </div>
+
+
+            <div id="product_box">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/main/main_product/p1.png">
+                            <strong>콘푸로스트</strong>
+                            <p>콘푸로스트는 자연에서 온 곡물 가공을 최소화하여 건강하게 구웠습니다</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/main/main_product/p2.png">
+                            <strong>첵스초코</strong>
+                            <p>첵스초코는 우유와 만나면 진한 초코 우유로 변하는 초코 시리얼입니다</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/main/main_product/p3.png">
+                            <strong>리얼 그래놀라</strong>
+                            <p>리얼 그래놀라는 5가지 진짜 과일과 건강한 그래놀라를 듬뿍 담았습니다</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/main/main_product/p4.png">
+                            <strong>프로틴 그래놀라</strong>
+                            <p>그래놀라에 100% 국내산 검정약콩으로 고소함과 단백질을 더했습니다</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------------------------------------->
+
+
+
+    <!--메인 5 켈로그 마스코트---->
+
+    <div id="main_5_kellogg_mascot_wrap">
+        <div id="content_box5">
+
+            <h3>Kellogg’s Heritage & Mascot</h3>
+            <p>켈로그는 115년 동안 창업자의 이념과 역사가 깊은 경영 가치를 바탕으로 더 좋은 상품과 서비스로<br> 풍요로운 삶을 만들어나가는데 공헌하기 위해 최선을 다하고 있습니다. </p>
+
+            <div id="first_img">
+                <img src="img/main/main_mascot/mascot_1.png" alt="Tony the Tiger">
+                <p>Tony the Tiger</p>
+            </div>
+
+
+
+            <div id="second_img">
+
+
+                <div class="two_box">
+                    <img src="img/main/main_mascot/mascot_2.png" alt="Toucan Sam">
+                    <p>Toucan Sam</p>
+                </div>
+
+
+                <div class="two_box">
+                    <img src="img/main/main_mascot/mascot_3.png" alt="Chekkie">
+                    <p>Chekkie</p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-------------------------------------------------------->
+
+
+    <!--메인6 레시피-->
+    <div id="main_6_recipe_wrap">
+        <div id="content_box6">
+            <div id="title_img">
+                <img src="img/main/main_recipes/img_recipes_title.png" alt="kellogg amazing kreations">
+            </div>
+
+            <div id="recipes">
+                <div id="recipes_plus">
+                    <p><a href="#">더보기</a></p>
+                    <a href="#"><i class="fa-solid fa-greater-than icon"></i></a>
+                </div>
+
+
+                <div class="recipes_box">
+                    <a href="#">
+                        <img src="img/main/main_recipes/recipe1.png" alt="첵스초코 유령 브라우니">
+                        <p>첵스초코 유령 브라우니</p>
+                    </a>
+                </div>
+
+                <div class="recipes_box">
+                    <a href="#">
+                        <img src="img/main/main_recipes/recipe2.png" alt="그릭모모">
+                        <p>그릭모모</p>
+                    </a>
+                </div>
+
+
+                <div class="recipes_box">
+                    <a href="#">
+                        <img src="img/main/main_recipes/recipe3.png" alt="에너지바K 곶감말이">
+                        <p>에너지바K 곶감말이</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------------------------------------->
+
+
+    <!--메인7  sns영역-->
+    <div id="main_7_sns_wrap">
+        <div id="content_box7">
+
+            <div class="sns_imgbox1">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/main/main_sns/insta_img1.png" alt="인스타사진1" class="insta_img">
+                            <img src="img/main/main_sns/instagram_icon.png" alt="인스타그램 아이콘" class="insta_icon">
+                            <img src="img/main/main_sns/img_gradient.png" alt="사진 속 그라데이션" class="gradient">
+                        </a>
+
+
+                        <img src="img/main/main_sns/img_picture-frame_top1.png" alt="테두리1-위" class="top">
+                        <img src="img/main/main_sns/img_picture-frame_right2.png" alt="테두리2-오른쪽" class="right">
+                        <img src="img/main/main_sns/img_picture-frame_bottom3.png" alt="테두리3-아래" class="bottom">
+                        <img src="img/main/main_sns/img_picture-frame_left4.png" alt="테두리4-왼쪽" class="left">
+
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            <img src="img/main/main_sns/insta_img2.png" alt="인스타사진2" class="insta_img">
+                            <img src="img/main/main_sns/instagram_icon.png" alt="인스타그램 아이콘" class="insta_icon">
+                            <img src="img/main/main_sns/img_gradient.png" alt="사진 속 그라데이션" class="gradient">
+                        </a>
+
+
+                        <img src="img/main/main_sns/img_picture-frame_top1.png" alt="테두리1-위" class="top">
+                        <img src="img/main/main_sns/img_picture-frame_right2.png" alt="테두리2-오른쪽" class="right">
+                        <img src="img/main/main_sns/img_picture-frame_bottom3.png" alt="테두리3-아래" class="bottom">
+                        <img src="img/main/main_sns/img_picture-frame_left4.png" alt="테두리4-왼쪽" class="left">
+
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            <img src="img/main/main_sns/insta_img3.jpg" alt="인스타사진3" class="insta_img">
+                            <img src="img/main/main_sns/instagram_icon.png" alt="인스타그램 아이콘" class="insta_icon">
+                            <img src="img/main/main_sns/img_gradient.png" alt="사진 속 그라데이션" class="gradient">
+                        </a>
+
+
+                        <img src="img/main/main_sns/img_picture-frame_top1.png" alt="테두리1-위" class="top">
+                        <img src="img/main/main_sns/img_picture-frame_right2.png" alt="테두리2-오른쪽" class="right">
+                        <img src="img/main/main_sns/img_picture-frame_bottom3.png" alt="테두리3-아래" class="bottom">
+                        <img src="img/main/main_sns/img_picture-frame_left4.png" alt="테두리4-왼쪽" class="left">
+
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            <img src="img/main/main_sns/insta_img4.png" alt="인스타사진4" class="insta_img">
+                            <img src="img/main/main_sns/instagram_icon.png" alt="인스타그램 아이콘" class="insta_icon">
+                            <img src="img/main/main_sns/img_gradient.png" alt="사진 속 그라데이션" class="gradient">
+                        </a>
+
+
+                        <img src="img/main/main_sns/img_picture-frame_top1.png" alt="테두리1-위" class="top">
+                        <img src="img/main/main_sns/img_picture-frame_right2.png" alt="테두리2-오른쪽" class="right">
+                        <img src="img/main/main_sns/img_picture-frame_bottom3.png" alt="테두리3-아래" class="bottom">
+                        <img src="img/main/main_sns/img_picture-frame_left4.png" alt="테두리4-왼쪽" class="left">
+
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            <img src="img/main/main_sns/insta_img5.jpg" alt="인스타사진5" class="insta_img">
+                            <img src="img/main/main_sns/instagram_icon.png" alt="인스타그램 아이콘" class="insta_icon">
+                            <img src="img/main/main_sns/img_gradient.png" alt="사진 속 그라데이션" class="gradient">
+                        </a>
+
+                        <div class="frame_box">
+                            <img src="img/main/main_sns/img_picture-frame_top1.png" alt="테두리1-위" class="top">
+                            <img src="img/main/main_sns/img_picture-frame_right2.png" alt="테두리2-오른쪽" class="right">
+                            <img src="img/main/main_sns/img_picture-frame_bottom3.png" alt="테두리3-아래" class="bottom">
+                            <img src="img/main/main_sns/img_picture-frame_left4.png" alt="테두리4-왼쪽" class="left">
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            <img src="img/main/main_sns/insta_img6.jpg" alt="인스타사진6" class="insta_img">
+                            <img src="img/main/main_sns/instagram_icon.png" alt="인스타그램 아이콘" class="insta_icon">
+                            <img src="img/main/main_sns/img_gradient.png" alt="사진 속 그라데이션" class="gradient">
+                        </a>
+
+
+                        <div class="frame_box">
+                            <img src="img/main/main_sns/img_picture-frame_top1.png" alt="테두리1-위" class="top">
+                            <img src="img/main/main_sns/img_picture-frame_right2.png" alt="테두리2-오른쪽" class="right">
+                            <img src="img/main/main_sns/img_picture-frame_bottom3.png" alt="테두리3-아래" class="bottom">
+                            <img src="img/main/main_sns/img_picture-frame_left4.png" alt="테두리4-왼쪽" class="left">
+                        </div>
+                    </li>
+                </ul>
+
+                <a href="#"><img src="img/main/main_sns/popup.png" alt="소비기한 표시제"></a>
+
+            </div>
+
+
+
+
+
+            <div class="sns_imgbox2">
+
+                <a href="#">
+                    <div id="youtube_box">
+                        <img src="img/main/main_sns/youtube_icon.png" alt="유튜브아이콘" id="youtube_icon">
+                        <img src="img/main/main_sns/yotube_play_icon.png" alt="플레이 버튼" id="play_btn">
+
+                        <img src="img/main/main_sns/img_picture-frame_top1.png" alt="유튜브 테두리1-위" class="ytu_top">
+                        <img src="img/main/main_sns/img_picture-frame_right2.png" alt="유튜브 테두리2-오른쪽" class="ytu_right">
+
+                        <img src="img/main/main_sns/img_picture-frame_bottom3.png" alt="유튜브 테두리3-아래" class="ytu_bottom">
+
+                        <img src="img/main/main_sns/img_picture-frame_left4.png" alt="유튜브 테두리4-왼쪽" class="ytu_left">
+                    </div>
+                </a>
+
+
+
+
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/main/main_sns/naver_blog_img1.png" alt="블로그사진1" class="blog_img">
+                            <img src="img/main/main_sns/naver_blog_icon.png" alt="네이버 블로그 아이콘" class="naver_blog_icon">
+                            <img src="img/main/main_sns/img_gradient.png" alt="사진 속 그라데이션" class="gradient">
+                        </a>
+
+                        <img src="img/main/main_sns/img_picture-frame_top1.png" alt="테두리1-위" class="top">
+                        <img src="img/main/main_sns/img_picture-frame_right2.png" alt="테두리2-오른쪽" class="right">
+                        <img src="img/main/main_sns/img_picture-frame_bottom3.png" alt="테두리3-아래" class="bottom">
+                        <img src="img/main/main_sns/img_picture-frame_left4.png" alt="테두리4-왼쪽" class="left">
+
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/main/main_sns/naver_blog_img2.png" alt="블로그사진2" class="blog_img">
+                            <img src="img/main/main_sns/naver_blog_icon.png" alt="네이버 블로그 아이콘" class="naver_blog_icon">
+                            <img src="img/main/main_sns/img_gradient.png" alt="사진 속 그라데이션" class="gradient">
+                        </a>
+
+                        <img src="img/main/main_sns/img_picture-frame_top1.png" alt="테두리1-위" class="top">
+                        <img src="img/main/main_sns/img_picture-frame_right2.png" alt="테두리2-오른쪽" class="right">
+                        <img src="img/main/main_sns/img_picture-frame_bottom3.png" alt="테두리3-아래" class="bottom">
+                        <img src="img/main/main_sns/img_picture-frame_left4.png" alt="테두리4-왼쪽" class="left">
+
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/main/main_sns/naver_blog_img3.png" alt="블로그사진3" class="blog_img">
+                            <img src="img/main/main_sns/naver_blog_icon.png" alt="네이버 블로그 아이콘" class="naver_blog_icon">
+                            <img src="img/main/main_sns/img_gradient.png" alt="사진 속 그라데이션" class="gradient">
+                        </a>
+
+
+                        <img src="img/main/main_sns/img_picture-frame_top1.png" alt="테두리1-위" class="top">
+                        <img src="img/main/main_sns/img_picture-frame_right2.png" alt="테두리2-오른쪽" class="right">
+                        <img src="img/main/main_sns/img_picture-frame_bottom3.png" alt="테두리3-아래" class="bottom">
+                        <img src="img/main/main_sns/img_picture-frame_left4.png" alt="테두리4-왼쪽" class="left">
+
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/main/main_sns/naver_blog_img4.png" alt="블로그사진4" class="blog_img">
+                            <img src="img/main/main_sns/naver_blog_icon.png" alt="네이버 블로그 아이콘" class="naver_blog_icon">
+                            <img src="img/main/main_sns/img_gradient.png" alt="사진 속 그라데이션" class="gradient">
+                        </a>
+
+
+                        <img src="img/main/main_sns/img_picture-frame_top1.png" alt="테두리1-위" class="top">
+                        <img src="img/main/main_sns/img_picture-frame_right2.png" alt="테두리2-오른쪽" class="right">
+                        <img src="img/main/main_sns/img_picture-frame_bottom3.png" alt="테두리3-아래" class="bottom">
+                        <img src="img/main/main_sns/img_picture-frame_left4.png" alt="테두리4-왼쪽" class="left">
+
+                    </li>
+
+
+
+                </ul>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <!---------------------------------------------------->
+
+    <!--메인8  시리얼 영양과 혁신-->
+    <div id="main_8_cereal_story_wrap">
+
+        <div id="nutrition_cereal">
+            <div class="dark_cover"></div>
+            <div class="text_box">
+                <h1>시리얼의 영양</h1>
+                <p>한 줌의 곡물이 맛있는 식사가 되고, 농장에서 여러분의 식탁으로 전달되기까지 맛있고
+                    건강한 시리얼 한 스푼을 위해 켈로그는 항상 최선의 노력을 다하고 있습니다.</p>
+                <button><a href="#">더 알아보기</a></button>
+            </div>
+        </div>
+
+        <div id="innovation_cereal">
+            <div class="dark_cover"></div>
+            <div class="text_box">
+                <h1>시리얼의 혁신</h1>
+                <p>Kellogg 세계 최초로 아침 식사용 시리얼을 개발한 후로 지난 100년 동안 시리얼은 더 맛있고
+                    건강하게 진화하고 있습니다.</p>
+                <button><a href="#">더 알아보기</a></button>
+            </div>
+        </div>
+        </ul>
+
+    </div>
+
+
+    <!---------------------------------------------------->
+
+
+    <!--푸터-->
+    <footer>
+
+        <!---윗박스--->
+        <div id="info_detail_box">
+
+            <div id="list">
+                <ul>
+                    <li><a href="#">오시는 길</a></li>
+                    <li>|</li>
+                    <li><a href="#">사이트 맵</a></li>
+                    <li>|</li>
+                    <li><a href="#">개인정보 보호정책</a></li>
+                    <li>|</li>
+                    <li><a href="#">쿠키 기본 설정</a></li>
+                </ul>
+            </div>
+
+
+
+
+            <div id="p_farm_wrap">
+
+                <div id="fam_img_wrap_up_before">
+                    <img src="img/footer/best_family.png" alt="가족친화 우수기업">
+                </div>
+
+                <p>
+                    안성공장 | 17567 경기도 안성시 공단2로 29 (경기도 안성시 신소현동 142번지)<br>
+                    서울본사 | 06235 서울시 강남구 테헤란로 134 15층 (서울 강남구 역삼동 735-3 포스코타워 역삼 15층)
+                </p>
+
+                <div id="fam_img_wrap_up_after">
+                    <img src="img/footer/best_family.png" alt="가족친화 우수기업">
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!---아랫박스--->
+        <div id="info_kellogg_box">
+
+            <a href="#"><img src="img/footer/logo_white.png"></a>
+
+            <div id="copyright">
+                © 2021 KELLOGG Co Ltd ALL RIGHT RESERVED.
+            </div>
+
+            <div id="fam_img_wrap_down">
+                <img src="img/footer/best_family.png" alt="가족친화 우수기업">
+            </div>
+
+            <div id="sns">
+                <a href="#"><img src="img/footer/icon_youtube.png"></a>
+                <a href="#"><img src="img/footer/icon_instagram.png"></a>
+                <a href="#"><img src="img/footer/icon_naver_blog.png"></a>
+            </div>
+
+
+            <select onchange>
+                <option value="Languages">Languages</option>
+
+                <optgroup label="North America">
+                    <option value=""> States | English</option>
+                    <option value="">United States | Español</option>
+                    <option value="">Canada | English</option>
+                    <option value="">Canada | Français</option>
+                    <option value="">Mexico | Español</option>
+                </optgroup>
+
+
+                <optgroup label="Central America">
+                    <option value="">Guatemala | Español</option>
+                </optgroup>
+
+
+                <optgroup label="North America">
+                    <option value="">United States | English</option>
+                    <option value="">United States | Español</option>
+                    <option value="">Canada | English</option>
+                    <option value="">Canada | Français</option>
+                    <option value="">Mexico | Español</option>
+
+                </optgroup>
+
+
+                <optgroup label="Latin & South America">
+                    <option value="">Argentina | Español</option>
+                    <option value="">Brasil | Português</option>
+                    <option value="">Chile | Español</option>
+                    <option value="">Colombia | Español</option>
+                    <option value="">Ecuador | Español</option>
+                    <option value="">Paraguay | Español</option>
+                    <option value="">Peru | Español</option>
+                    <option value="">Uruguay | Español</option>
+                    <option value="">Venezuela | Español</option>
+                </optgroup>
+
+
+                <optgroup label="Europe & Middle East">
+                    <option valur="">Belgie/Belgique | Nederlands</option>
+                    <option valur="">Belgie/Belgique | Français</option>
+                    <option valur="">Danmark | Dansk</option>
+                    <option valur="">Deutschland | Deutsch</option>
+                    <option valur="">España | Español</option>
+                    <option valur="">France | Français</option>
+                    <option valur="">Ελλάδα/Greece | ελληνική</option>
+                    <option valur="">Ελλάδα/Greece | English</option>
+                    <option valur="">Ireland | English</option>
+                    <option valur="">Italia | Italiano</option>
+                    <option valur="">Nederland | Nederlands</option>
+                    <option valur="">Norge | Norsk</option>
+                    <option valur="">Österreich | Deutsch</option>
+                    <option valur="">Portugal | Português</option>
+                    <option valur="">Россия | Русский</option>
+                    <option valur="">Schweiz | Deutsch</option>
+                    <option valur="">Suisse | Français</option>
+                    <option valur="">Suomi | Suomi</option>
+                    <option valur="">Sverige | Svenska</option>
+                    <option value="">Türkiye | Türkçe</option>
+                    <option value="">United Kingdom | English</option>
+                </optgroup>
+
+
+                <optgroup label="Africa">
+                    <option value="">South Africa | English</option>
+                </optgroup>
+
+
+                <optgroup label="Asia">
+                    <option value="">日本 | 日本語</option>
+                    <option value="">대한민국 | 한국어</option>
+                    <option value="">台灣 | 繁體中文</option>
+                    <option value="">中国大陆 | 简体中文</option>
+                    <option value="">香港 | 繁體中文</option>
+                    <option value="">India | English</option>
+                </optgroup>
+
+
+                <optiongroup label="Oceania">
+                    <option value="">Australia | English</option>
+                    <option value="">New Zealand | English</option>
+                </optiongroup>
+            </select>
+
+        </div>
+    </footer>
+
+
+    </div>
+</body>
+
+</html>

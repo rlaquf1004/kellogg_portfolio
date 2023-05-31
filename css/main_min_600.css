@@ -1,0 +1,540 @@
+@charset "utf-8";
+
+@media (min-width:600px) {
+    /*슬라이더*/
+    #slider {
+    
+        width: 100%;
+        min-height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left:0;
+        top:-23px;
+        margin:0 0 100px 0px;
+        
+    }
+    
+    #slider_img {
+        background-image: url("../img/main/slider/s2.png");
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        
+        position:absolute; top:100px; left:0;
+        
+    
+    }
+    #text_img_relative_box {width:100%; height:auto; margin:0 auto; 
+        position:relative; }
+    
+    #text_img_relative_box > #text_img {
+        width: 310px;
+        height: 40px;
+        position:absolute; top:250px; left:80px;
+        
+    }
+    #text_img > img {width:100%; height:100%; }
+    
+    
+    
+    
+    
+    /*--------------------------------------------------------------------*/
+    
+    /*메인1  뉴스*/
+    #main1_news_wrap {
+        
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+        padding:30px 0 30px 0;
+        
+        
+    }
+    
+    #news_box {
+        
+        width: 98%;
+        height: auto;
+        display: flex;
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content:space-around;
+
+        background-color: #fff;
+        box-shadow:5px 5px 5px #eee;
+        
+        border-radius: 20px;
+        border:1px solid #ddd;
+        padding:30px 0 30px 0;
+    
+    }
+    
+    #news_box >img {
+        width: 50%;
+        height: 280px;
+        border-radius: 20px;
+    }
+    
+    #news_box > h1 {
+        font-size: 35px;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        font-family: 'Cabin', sans-serif;
+        font-weight: 600;
+       
+        
+    }
+    
+    #news_box > h3 {font-size: 16px; width:100%; height:20px; text-align:center; 
+        font-family: 'Cabin', sans-serif; font-weight:bold;
+        color:#BA0C2F; margin-bottom:20px;
+    }
+    
+    
+    
+    #news_box > #text_box { 
+        width: 48%;
+        height: 280px; 
+        
+        display:flex; 
+        flex-direction:column; 
+        justify-content:space-around; align-items:center;
+        
+    }
+    
+    #news_box > #text_box > h2 {font-size: 20px; width:400px; height:80px; text-align: center; font-family: 'Cabin', sans-serif; font-weight:600;
+    line-height:30px;  margin-top:10px;
+    }
+    #news_box > #text_box > p {font-size:15px; width:100%; height:100px;
+        text-align: center; line-height:30px; 
+        font-family: 'Cabin', sans-serif; font-weight:500; color:#656565; } 
+    
+    #news_box > #text_box > button {width:155px; height:50px; background-color:#BA0C2F; border:none; border-radius:30px; margin-top:30px;}
+    #news_box > #text_box > button:hover {cursor:pointer;}
+    
+    #news_box > #text_box > button > a {color:#fff; text-decoration:none; font-size:16px; font-family: 'Cabin', sans-serif; font-weight:600;}
+    
+    
+    
+    
+    /*---------------------------------------------------------------------*/
+    
+    /*메인2  켈로그 브랜드들*/
+#main_2_kellogg_brand_wrap {
+
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    
+    position:relative;
+}
+
+
+
+#content_box2 {
+    width: 100%;
+    height: auto;
+    
+    display:flex; flex-direction: row; flex-wrap:wrap; justify-content:center;
+    padding:30px 0 30px 0;
+    
+}
+
+#nuts {display:none; width:563px; height:753px; position:absolute; top:340px; right:-30px; }
+
+#content_box2 > h1 {width:100%; font-size: 35px;text-align: center;font-family: 'Cabin', sans-serif; font-weight: 600; }
+    
+#content_box2 > h2 {width:100%; font-size:20px; text-align:center; line-height:80px; color:#BA0C2F; font-weight: bold; font-family: 'Cabin', sans-serif;}
+
+
+.brand {width:29%; height:300px;  margin:10px;}
+.brand > a > img {width:100%; height:90%; } 
+.brand > a {text-decoration:none;}
+.brand > a > h2 {font-size: 18px; height:10%;  color: #2b2b2b;text-align: center;font-weight: bold; padding: 10px; font-family: 'Cabin', sans-serif;}
+
+
+
+
+#content_box2 > .nuts {width:563px; height:753px; position:absolute; top:230px; left:950px; z-index:-1;}
+#content_box2 > .milk {width:540px; height:700px; position:absolute; top:0; left:-500px;}
+
+
+    /*--------------------------------------------------------------------*/
+    
+    
+    
+    /*메인3   better 데이*/
+    #main_3_better_days_wrap {
+        
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../img/main/main_better_day/b1.jpg" ); 
+        background-position:center;
+        background-size: cover;
+        
+    
+    }
+    
+    #content_box3 {
+        width: 100%;
+        height:660px;
+        
+        padding-bottom:30px;
+        display: flex;
+        flex-direction:column; 
+        justify-content:space-evenly; align-items:center;
+    }
+    
+    #content_box3 > img {
+        width: 440px;
+        height: 90px;
+    }
+    
+    #content_box3 > #text_box {
+        width: 90%;
+        height:340px;
+        background-color:white;
+        background: rgba(255, 255, 255, 0.56);
+        display: flex;
+        flex-direction:column;
+        padding:40px 20px 30px;
+        justify-content:space-around;
+        align-items:center;
+        
+        
+        
+    }
+    
+    #text_box > p {
+        font-size: 28px;
+        width: 600px;
+        height: 100px;
+        margin:0 auto;
+        font-family: 'Cabin', sans-serif;
+        line-height: 50px;
+        font-weight:600;
+    
+    }
+    
+    #text_box> a {
+        text-decoration: none;
+        color: #fff;
+        
+        
+    
+        
+    }
+    
+    #text_box > a > span {
+        font-size: 16px;
+        text-align: center;
+        display:block;
+        
+        background-color: #BA0C2F;
+        padding: 20px 40px 20px 40px;
+        font-weight: 1000;
+        border-radius: 40px;
+        
+        font-family: 'Cabin', sans-serif;
+        
+    
+    }
+    
+    
+    
+    
+    
+    /*--------------------------------------------*/
+    
+    /*메인4 켈로그 주력 상품*/
+    #main_4_product_wrap {
+        box-shadow:4px 4px 4px 4px #eee;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    
+    #content_box4 {
+    
+        width: 100%;
+        height: auto;
+        
+        padding:80px 0 50px 0;
+    }
+    
+    /*제목*/
+    #content_box4 > #text_box {width:100%; height:auto;  display:flex; flex-wrap:wrap; }
+    
+    #text_box > h1 {width:100%; height:50px; font-size: 35px; 
+        text-align:center; font-family: 'Cabin', sans-serif; 
+        font-weight: 600;}
+    
+    #text_box > em {margin-right:5px; height:20px; margin-left:20px;}
+    #text_box > em > a { font-size: 14px; text-decoration: none; 
+        color:#2b2b2b; font-family: 'Cabin', sans-serif; 
+        font-weight:1000;}
+    #text_box > a > .icon1 {color:#2b2b2b; font-size:13px;}
+    
+    #text_box > h3 {width:100%;  height:20px; text-align: center; padding-bottom:40px; font-size:18px; color:#BA0C2F; font-weight: bold;  font-family: 'Cabin', sans-serif; }
+    
+    /*상품나열*/
+    #content_box4 > #product_box {width:100%; height:100%;
+    display:flex; flex-wrap:wrap; justify-content:center;
+    }
+    
+    #product_box > ul { width:100%; height:auto;  display:flex; flex-wrap:wrap; justify-content:space-between;}
+    #product_box > ul  > li { display:flex; width:23%; }
+    
+    #product_box > ul > li > a {text-decoration: none; display:flex; flex-direction:column; align-items:center; justify-content:space-around; }
+    
+    #product_box > ul > li > a > img {width:100%; height:100%; }
+    #product_box > ul > li > a > strong {font-size: 14px; line-height:40px; color:#2b2b2b; font-family: 'Cabin', sans-serif; font-weight:bold;}
+    #product_box > ul > li > a > p {font-size: 11px; width:100%; height:100%; color:#656565;  text-align:center;  line-height: 20px; font-family: 'Cabin', sans-serif;
+    
+    }
+    
+    
+    
+    /*--------------------------------------------------------------*/
+    
+    
+    
+    /*매인5 켈로그 마스코트*/
+    #main_5_kellogg_mascot_wrap {width:100%; height:auto;  display:flex; flex-direction:column;  align-items:center; padding:30px 0 30px 0;}
+    
+    #content_box5 {width:90%; height:auto;  display:flex; flex-wrap:wrap; justify-content:center; align-content:space-evenly; } 
+    
+    
+    #content_box5 > h3 {font-size:30px; width:100%; padding:30px 0 60px 0;  text-align:center; font-family: 'Cabin', sans-serif; font-weight: 600;}
+    #content_box5 > p {font-size:16px; width:100%; height:auto; height:90px; line-height:30px;  font-family: 'Cabin', sans-serif;  color:#656565;}
+    
+    
+    
+    #content_box5 > #first_img {width:100%; height:auto;  display:flex; flex-wrap:wrap; justify-content:center;}
+    
+    #first_img > img {width:100%; height:90%;}
+    #first_img > p {font-size:18px; width:100%; text-align: center;  color:#878c91; font-family: 'Cabin', sans-serif;}
+    
+    
+    
+    #content_box5 > #second_img {width:100%; height:auto;   display:flex; flex-wrap:wrap; justify-content:
+        space-between; }
+    
+    #second_img > .two_box {width:50%; height:100%;  display:flex; flex-wrap:wrap; justify-content:center;}
+    .two_box > img {width:100%; height:90%;}
+    .two_box > p {font-size:18px; color:#878c91; font-family: 'Cabin', sans-serif;}
+    
+    
+    
+    /*--------------------------------------------*/
+    
+    /*메인6  시리얼 레시피*/
+    #main_6_recipe_wrap {
+    
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:30px 0 30px 0;
+    }
+    
+    #content_box6 {
+        
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+        background-color: #ba0c2f;
+    }
+    
+    #title_img {width:224px; height:168px;}
+    #title_img > img {width:100%; height:100%;}
+    
+    #recipes {width:100%; height:auto; 
+    display: flex; flex-wrap:wrap; justify-content: space-around;}
+
+    #recipes_plus  {width:100%; padding:0 0 30px 15px; font-family: 'Cabin', sans-serif; }
+    #recipes_plus p {width:100%; display:inline; margin: 0 5px 0 0 ;}
+    #recipes > div p a {font-size: 16px;  color:#fff; font-weight:1000;
+        text-decoration: none;  font-family: 'Cabin', sans-serif; } 
+        
+    a >.icon {color:#fff; text-decoration:none; font-size: 13px;}
+    
+    
+    
+    .recipes_box {width: 30%; height:auto;  }
+    
+    .recipes_box > a {text-decoration: none; width:100%;}
+    .recipes_box > a > img {width:100%; height:175px; }
+    
+    .recipes_box > a > p {width:100%; padding-top:15px; font-size: 16px;  color:#fff;  font-family: 'Cabin', sans-serif; font-weight:1000;}
+    
+    
+    /*--------------------------------------------*/
+    
+    /*메인7  sns사진*/
+    #main_7_sns_wrap {
+    
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px 0 60px 0;
+}
+
+#content_box7 {
+    
+    width: 100%;
+    height: auto; 
+    display:flex; flex-wrap:wrap; align-content:space-between;
+   
+}
+
+/*상단사진*/
+.sns_imgbox1 { width:100%; height:auto; display:flex; align-items:space-around; }
+
+.sns_imgbox1 > a {width:40%; height:100%; display:flex; justify-content: center; align-items:center;}
+.sns_imgbox1 > a > img {width:90%; height:90%;}
+
+.sns_imgbox1 > ul {width:60%; height:auto;  display:flex; flex-wrap:wrap; justify-content:space-evenly; align-content:space-evenly;}
+.sns_imgbox1 > ul > li {width:30%; height:45%;  position:relative;}
+.insta_img {width:100%; height:100%;}
+
+.sns_imgbox1 > ul > li > a > .insta_icon {width:30px; height:30px; position:absolute; top:20px; left:20px; z-index:1 ;}
+.sns_imgbox1 > ul > li > a > .gradient {position:absolute; top:0; left:0; width:100%; height:100%;}
+
+
+
+.top {width:100%; height:11px; position:absolute; top:0; left:0; }
+.right {width:11px; height:100%; position:absolute; top:0; right:0;}
+.bottom {width:100%; height:11px; position:absolute; bottom:0; left:0; }
+.left {width:11px; height:100%; position:absolute; top:0; left:0; }
+
+/*하단 사진*/
+
+.sns_imgbox2 { width:100%; height:auto;  display:flex;  justify-content:space-between}
+
+.sns_imgbox2 > a  {width:60%; height:100%;}
+.sns_imgbox2 > a > #youtube_box {width:100%; height:100%; background-image:url("../img/main/main_sns/img_youtube.jpg"); position:relative; background-position: center; background-size:cover;} 
+
+#youtube_box > #youtube_icon {width:30px; height:30px; position:absolute; top:20px; left:20px;}
+#youtube_box > #play_btn {width:90px; height:90px; position:absolute; bottom:100px; left:45%;}
+
+.ytu_top {width:100%; height:11px; position:absolute; top:0; left:0; }
+.ytu_right {width:11px; height:100%; position:absolute; top:0; right:0;}
+.ytu_bottom {width:100%; height:11px; position:absolute; bottom:0; left:0; }
+.ytu_left {width:11px; height:100%; position:absolute; top:0; left:0; }
+
+
+
+
+
+.sns_imgbox2 > ul { width:40%; height:auto;  display:flex; flex-wrap:wrap; justify-content:space-around; align-content:space-around;}
+.sns_imgbox2 > ul > li {width:45%; height:45%;  position:relative;}
+.sns_imgbox2 > ul > li > a > .naver_blog_icon {width:30px; height:30px; position:absolute; top:20px; left:20px; z-index:1 ;}
+.sns_imgbox2 > ul > li > a > .gradient {position:absolute; top:0; left:0; width:100%; height:100%;}
+.blog_img {width:100%; height:100%;}
+
+
+.sns_imgbox2 > .top {width:100%; height:11px; position:absolute; top:0; left:0; }
+.sns_imgbox2 > .right {width:11px; height:100%; position:absolute; top:0; right:0;}
+.sns_imgbox2 > .bottom {width:100%; height:11px; position:absolute; bottom:0; left:0; }
+.sns_imgbox2 > .left {width:11px; height:100%; position:absolute; top:0; left:0; }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    /*--------------------------------------------*/
+    
+    /*메인8   시리얼 영양과 혁신*/
+#main_8_cereal_story_wrap {
+    
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nutrition_cereal {
+    background-image:url("../img/main/main_cereal_story/s2.jpg");
+    background-position: center;
+    background-size:cover;
+    width: 100%;
+    height:600px;
+    display: flex;
+    align-items: center;
+    
+    display:flex; 
+    justify-content:center; 
+    position:relative;
+}
+
+.dark_cover {width:100%; height:100%; position:absolute; top:0; left:0; background-color:rgba(0,0,0,0.3);
+
+}
+
+#innovation_cereal {
+    background-image:url("../img/main/main_cereal_story/s4.jpg");
+    background-position: center;
+    background-size:cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    
+    display:flex;
+    justify-content:center;
+    position:relative;
+}
+
+.text_box {
+    width: 600px;
+    height: 350px;
+    background-color:white;
+    background: rgba(255, 255, 255, 0.9);
+    padding:60px;
+    
+    display:flex; flex-wrap:wrap; justify-content: flex-start; align-content:space-between; z-index: 1;
+}
+.text_box > h1 {font-size: 40px; width:100%; font-weight:bold; font-family: 'Cabin', sans-serif;}
+
+.text_box > p {font-size: 16px; width:100%; line-height:25px; font-family: 'Cabin', sans-serif;}
+
+.text_box > button {font-size: 16px;  background-color: #BA0C2F;  border:none; padding:15px 40px 15px 40px; border-radius:40px; opacity:1;}
+.text_box > button:hover {cursor:pointer;}
+
+.text_box > button > a {text-decoration:none; color:#fff; font-weight: bold; font-family: 'Cabin', sans-serif;}
+
+}
+
+
+

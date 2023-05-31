@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형_켈로그</title>
+    <script src="https://kit.fontawesome.com/e4d2c04c78.js" crossorigin="anonymous"></script>
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+
+<!--햄버거 목록 스크립트-->
+
+<!--599px--->
+    <script>
+        
+        $(document).ready(function(){
+            $(".menu_open_btn").click(function(){
+                $("#ul_wrap, .sns_box").slideToggle();
+                });
+        });
+
+        $(window).resize(function () {
+                if (window.innerWidth >= 1260) {
+                    $("#ul_wrap, .sns_box").show();
+                }
+
+                if (window.innerWidth <= 1259) {
+                    $("#ul_wrap, .sns_box").hide();
+                }
+            });
+
+    </script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="css/reset.css" rel="stylesheet">
+    
+    <link href="css/common_main_599.css" rel="stylesheet">
+    <link href="css/common_min_600.css" rel="stylesheet">
+    <link href="css/common_min_1260.css" rel="stylesheet">
+
+
+    <link href="css/sub_max_599.css" rel="stylesheet">
+    <link href="css/sub_min_600.css" rel="stylesheet">
+    <link href="css/sub_min_1260.css" rel="stylesheet">
+    
+
+    <!--헤더 영어 폰트 --->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@500&family=Cabin:wght@500&display=swap"
+        rel="stylesheet">
+
+    <!--제목 한글 폰트--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@500&family=Cabin:wght@500&family=Noto+Sans+KR:wght@700&display=swap"
+        rel="stylesheet">
+    <!----->
+
+
+
+
+
+
+    <style>
+        * {
+            
+            box-sizing:border-box;
+            
+        }
+        
+        #wrap {overflow: hidden;}
+        
+
+        
+    </style>
+
+
+
+</head>
+
+<body>
+    <div id="wrap">
+
+        <!--헤더-->
+        <div id="header_wrap">
+            
+            <header>
+
+                <div class="box">
+                    <img src="img/header/header_img.png" alt="">
+                    <div id="header_in_box">
+
+                        <h1>
+                            <a href="index.html">
+                                <img src="img/header/logo.png">
+                            </a>
+                        </h1>
+
+                        <button type="button" class="menu_open_btn" title="전체메뉴 열기">
+                            <img src="https://www.kellogg.co.kr/Images/Common/img_header_open.png" alt="메뉴열기 버튼">
+                        </button>
+
+
+                        <div id="ul_wrap">
+
+                            <ul>
+                                <li><a href="#">Our Food <i class="fa-solid fa-chevron-down icondown"></i></a></li>
+                                <li><a href="#">Recipes</a></li>
+                                <li><a href="#">Health & Nutrition</a></li>
+                                <li><a href="#">Better Days</a></li>
+                                <li><a href="#">Who we are <i class="fa-solid fa-chevron-down icondown"></i></a></li>
+                            </ul>
+
+
+                            <div class="sns_box">
+                                <a href="#"><img src="img/header/sns01.png"></a>
+                                <a href="#"><img src="img/header/sns02.png"></a>
+                                <a href="#"><img src="img/header/sns03.png"></a>
+                            </div>
+
+                        </div>
+
+                        
+
+                        
+                    </div>
+                </div>
+
+
+
+            </header>
+        </div>
+
+        <!---------------------------------------------------->
+
+            <!--서브-->
+
+            
+
+            <div id="title_box">
+                <h1>Health & Nutrition</h1>
+            </div>
+
+            <div id="sub">
+                
+                <div id="sub_main_box">
+
+                    <div id="box1">
+                        <div class="text_box_up">
+                            <h2>비타민과 미네랄</h2>
+                            <p>건강한 일상을 위하여 우리는 다양한 영양소를 골고루 섭취하는 것이 중요합니다.</p>
+                        </div>
+
+                        <div class="img_box">
+                            <img src="img/sub/box1_cereal_img.png" alt="">
+                        </div>
+
+                        <div class="text_box_down">
+                            <p>
+                                곡물의 장점을 한껏 살린 켈로그 시리얼은 다양하고 풍부한 영양소를 함유하고 있습니다. <br>
+                                특히 복합 탄수화물과 식이섬유가 풍부하고 지방이 적으며 주요 비타민과 미네랄의 공급도 도와줍니다.
+                                <br><br>
+                                비타민은 생명을 이어나가는데 반드시 필요한 성분인 효소의 중요한 활성성분으로,
+                                영양소의 대사 작용에 관여합니다.
+                                때문에 비타민이 부족하면 체내 영양소 대사에 문제가 생기고, 건강에 적신호가 오게 됩니다. 
+                                <br><br>대표적인 미네랄 몇 가지의 역할은 다음과 같습니다.칼슘은 우리 몸에 가장 풍부한 미네랄로 주로 뼈와 치아가 만들어지는 것을 돕고, 심장근육이 수축할 때에도 중요한 역할을 수행합니다.
+                            </p>
+                        </div>
+
+                        <button class="Read_More"><a href="#">더 보기 > </a></button>
+                    </div>
+
+
+
+
+
+                    <div  id="box2">
+                        <div class="text_box_up">
+                            <h2>시리얼에 대해 당신이 몰랐던 진실 4가지</h2>
+                        </div>
+
+                        <div class="img_box">
+                            <img src="img/sub/box2_women_img.png" alt="">
+                        </div>
+
+                        <div class="text_box_down">
+                            <h3>1. 시리얼은 여신의 이름이다? – <span>YES</span></h3>
+                            <p>시리얼은 곡물을 의미하는 라틴어 단어 케레알리스(cerealis)에서 파생된 풍요를 상징하는 
+                                로마 추수의 여신 세레스(Ceres)에서 유래된 이름입니다. 
+                                로마 시대 동안 세레스(Ceres)의 이름은 곡물, 빵과 동의어로 쓰이기도 했다고 합니다.</p>
+
+                            <h3>2. 시리얼은 실수로 탄생한 음식이다? –<span> YES</span></h3>
+                            
+                            <p> 켈로그 창업자인 Will Keith Kellogg와 그의 형 John Harvey Kellogg 박사는 요양원에서 환자들을 위한 식품을 개발하는 과정에서 
+                                롤러 압축기에 밀가루를 넣어 놓았다가 우연히 반죽이 건조되어 부서져 탄생한
+                                얇은 밀 푸레이크를 발견했습니다. 이는 뛰어난 맛으로 환자들에게 인기가 좋았고, 시리얼이 탄생하게 된 배경이 되었습니다.</p>
+
+                            <h3>3. 시리얼은 튀겨서 만든다? – <span>NO</span></h3>
+                            <p>시리얼은 천연 곡물 그대로의 맛과 향을 살리기 위해 구워서 만들어집니다. 곡물을 수확한 후 찌기, 압착하여 바삭하게 굽기, 다양한 비타민과 무기질을 첨가 후 코팅하고 건조하면 끝! 
+                                    소화도 잘되고 우유와 곁들여 먹을 때 기름띠도 생기지 않아요.</p>
+                            
+                            <h3>4. 시리얼에 우유보다 많은 비타민D가 들어있다? – <span>YES</span></h3>
+                            <p>같은 양의 시리얼과 우유를 비교해보면 시리얼에 더 많은 비타민D가 함유되어 있습니다. 
+                                비타민D가 함유된 음식 중에 가장 간편하게 먹을 수 있는 우유의 경우 100g당 약1µg, 버터는 약1µg이 함유된데 반해 시리얼의 경우(켈로그 콘프로스트 기준) 8.3µg가 함유되어 있습니다.</p>        
+
+                        </div>
+                    </div>
+
+
+                    <div  id="box3">
+                        <div class="text_box_up">
+                            <h2>켈로그가 알려주는 진짜 시리얼에 대한 모든 것</h2>
+                        </div>
+
+                        <div class="img_box">
+                            <img src="img/sub/box3_seed_img.png">
+                        </div>
+
+                        <div class="text_box_down">
+                            <p>세계 최대 시리얼 기업인 켈로그는 지난 115년간 쌓아온 깊은 역사와 노하우를 바탕으로 시리얼에 대한 잘못된 인식을 바로잡고자 시리얼이 지닌 간편함을 뛰어넘는 영양적인 가치를 전달하고자 합니다.
+                                켈로그의 ‘씨앗에서 식탁까지’는 엄선한 곡물을 찌고 구워 소비자들의 식탁에 진정한 한끼 식사로 오르기까지 시리얼의 리얼한 여정입니다.
+                                <br><br>
+                                한 알의 곡물 씨앗을 고르기 위해 농부들과 협력을 하고, 정성이 가득한 한 줌의 곡물에 우리 몸이 필요로 하는 비타민, 미네랄 등 다양한 영양 성분을 담아 다양한 시리얼 제품으로 탄생시키는 과정이지요. 켈로그의 시리얼 제품은 여러분의 주방에서 음식을 조리하는 것과 동일한 방식으로 만들어집니다.
+                                단지 그 규모와 양이 조금 더 크다는 것뿐이지요!
+                            </p>
+                        </div>
+
+                        <button class="Read_More"><a href="#">더 보기 > </a></button>
+                    </div>
+
+
+                    <div  id="box4">
+                        <div class="text_box_up">
+                            <h2>씨앗에서 식탁까지</h2>
+                        </div>
+
+                        <video controls>
+                            <source src="video/[켈로그] 씨앗에서 식탁까지~ 켈로그 시리얼의 리얼한 여정!.mp4" type="video/mp4">
+                            <strong>Your browser does not support the video tag.</strong>
+                        </video>
+
+                        <div class="text_box_down">
+                            <p>한 줌의 곡물이 맛있는 식사가 되고, 농장에서 여러분의 식탁으로 전달되기까지<br> 맛있고
+                            건강한 시리얼 한 스푼을 위해 켈로그는 항상 최선의 노력을 다하겠습니다.
+                            </p>
+                            
+                        </div>
+
+                    </div>
+
+                    
+                    <div  id="box5">
+                        <div class="text_box_up">
+                            <h2>시리얼의 혁신</h2>
+                        </div>
+
+                        <div class="innovation_img_box">
+                            <div class="ibox"><img src="img/sub/box5_img1.png" alt="" ></div>
+                            <div class="ibox"><img src="img/sub/box5_img2.png" alt="" ></div>
+                            <div class="ibox"><img src="img/sub/box5_img3.png" alt="" ></div>
+                            
+                        </div>
+
+                        <div class="text_box_down">
+                            <h3>우연이 낳은 역사적인 발명, 푸레이크</h3>
+                            <p>19세기에 첫 등장 후 지난 100년 동안 더 맛있고 건강하게 변화하는 시리얼
+                                옥수수, 밀, 쌀 등 곡류를 주원료로 비타민류와 무기질류 등 영양성분을 강화
+                                푸레이크, 오트밀, 그래놀라, 뮤즐리, 선식 등 다양한 형태의 가공식품을 지칭한다.</p>
+                        </div>
+
+                        <div class="Share_box">
+                            <h4>공유하기:</h4>
+                            <div class="icon"><a href="#"><img src="img/header/sns01.png" alt=""></a></div>
+                            <div class="icon"><a href="#"><img src="img/header/sns02.png" alt=""></a></div>
+                            <div class="icon"><a href="#"><img src="img/header/sns03.png" alt=""></a></div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div  id="box6">
+                        <div class="form_title">
+                            <h1>켈로그 문의사항</h1>
+                            <p>귀하의 이메일 주소는 공개되지 않습니다.</p>
+                        </div>
+
+                        <div class="info_input_box">
+                            <textarea placeholder="내용을 입력하세요"></textarea>
+                            <input type="text" name="name" placeholder="이름" >
+                            <input type="text" name="email" placeholder="이메일">
+                        </div>
+
+                        <div class="check">
+                            <input type="checkbox" value="체크박스" name="체크박스">
+                            <p>해당 정보를 기억하겠습니까?</p>
+                        </div>
+
+                        <input type="submit" name="submit" value="전송하기">
+
+                    </div>
+
+                </div>
+
+
+                <div id="side_box">
+
+                    <!--검색창-->
+                    <div  id="search">
+                        <input type="text" placeholder="검색하기" >
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </div>
+
+
+                    <!--켈로그의 가치-->
+                    <div  id="Kelloggs_Value">
+                        <h2 class="title">켈로그의 가치</h2>
+                        <p>무결성, 책임, 열정, 겸손, 단순함 및 성공에 대한 집중을 통해 우리는 아이디어가 꽃피고 사람들이 번창하고 성공이 번창할 수 있는 활기찬 회사 문화를 만들었습니다.</p>
+                    </div>
+
+
+                    <!--태그들-->
+                    <div  id="tags">
+                        <h2 class="title">태그</h2>
+                        <ul>
+                            <li>클래식 시리얼</li>
+                            <li>초코시리얼</li>
+                            <li>그래놀라</li>
+                            <li>프로틴</li>
+                            <li>켈로그바</li>
+                            <li>크런치넛</li>
+                        </ul>
+
+                    </div>
+
+
+                    <!--최근게시물-->
+                    <div  id="recent_Posts">
+                        <h2 class="title">최근게시물</h2>
+
+                        <div class="box">
+                            <div class="photo_box">
+                                <img src="img/sub/side/recent_Posts_img1.png" alt="">
+                            </div>
+
+                            <div class="text_box">
+                                <p>2023.01.05</p>
+                                <p>달콤하고 부드러운 블루베리 스무디에 프로틴 그래놀라 다크초코볼 토핑으로 고소하고 바삭하게!</p>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="photo_box">
+                                <img src="img/sub/side/recent_Posts_img2.png" alt="">
+                            </div>
+
+                            <div class="text_box">
+                                <p>2023.02.21</p>
+                                <p>새콤한 블루베리&산딸기와 달콤한 요거트에 고소한 리얼 그래놀라 크런치오트를 시원하게 얼린 홈메이드 간식!</p>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="photo_box">
+                                <img src="img/sub/side/recent_Posts_img3.png" alt="">
+                            </div>
+
+                            <div class="text_box">
+                                <p>2023.03.06</p>
+                                <p>리얼 그래놀라 크런치 오트의 고소함과 바삭함에 견과류 토핑으로 식감을 더하고 바나나와 초코의 달콤한 조합!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--카테고리-->
+                    <div  id="category">
+                        <h2 class="title">카테고리</h2>
+                        <ul>
+
+                            <li><a href="#">시리얼의 영양</a></li>
+                            <li><a href="#">씨앗에서 식탁까지</a></li>
+                            <li><a href="#">영양정보 들여다보기</a></li>
+                            <li><a href="#">더 나은 내일 캠페인</a></li>
+                            <li><a href="#">고 그린 친환경 캠페인</a></li>
+                            <li><a href="#">리얼 시리얼 캠페인</a></li>
+                            
+                        </ul>
+                    </div>
+
+
+                    <!--인스타그램-->
+                    <div  id="instagram">
+                        <h2 class="title">인스타그램</h2>
+
+                        <div class="mini_ibox">
+                            <img src="img/sub/side/insta/insta_img1.PNG" alt="">
+                            <img src="img/sub/side/insta/insta_img2.PNG" alt="">
+                            <img src="img/sub/side/insta/insta_img3.PNG" alt="">
+                            <img src="img/sub/side/insta/insta_img4.PNG" alt="">
+                            <img src="img/sub/side/insta/insta_img5.PNG" alt="">
+                            <img src="img/sub/side/insta/insta_img6.PNG" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+
+
+        <!---------------------------------------------------->
+
+
+        <!--푸터-->
+        <footer>
+
+            <!---윗박스--->
+            <div id="info_detail_box">
+
+                <div id="list">
+                    <ul>
+                        <li><a href="#">오시는 길</a></li>
+                        <li>|</li>
+                        <li><a href="#">사이트 맵</a></li>
+                        <li>|</li>
+                        <li><a href="#">개인정보 보호정책</a></li>
+                        <li>|</li>
+                        <li><a href="#">쿠키 기본 설정</a></li>
+                    </ul>
+                </div>
+                
+                
+                
+
+                <div id="p_farm_wrap">
+
+                    <div id="fam_img_wrap_up_before">
+                    <img src="img/footer/best_family.png" alt="가족친화 우수기업">
+                    </div>
+                    
+                    <p>
+                    안성공장 | 17567 경기도 안성시 공단2로 29 (경기도 안성시 신소현동 142번지)<br>
+                    서울본사 | 06235 서울시 강남구 테헤란로 134 15층 (서울 강남구 역삼동 735-3 포스코타워 역삼 15층)
+                    </p>
+                
+                    <div id="fam_img_wrap_up_after">
+                    <img src="img/footer/best_family.png" alt="가족친화 우수기업">
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+
+            <!---아랫박스--->
+            <div id="info_kellogg_box">
+
+                <a href="#"><img src="img/footer/logo_white.png"></a>
+
+                <div id="copyright">
+                    © 2021 KELLOGG Co Ltd ALL RIGHT RESERVED.
+                </div>
+
+                <div id="fam_img_wrap_down">
+                    <img src="img/footer/best_family.png" alt="가족친화 우수기업">
+                </div>
+
+                <div id="sns">
+                    <a href="#"><img src="img/footer/icon_youtube.png"></a>
+                    <a href="#"><img src="img/footer/icon_instagram.png"></a>
+                    <a href="#"><img src="img/footer/icon_naver_blog.png"></a>
+                </div>
+
+
+                <select onchange>
+                    <option value="Languages">Languages</option>
+
+                    <optgroup label="North America">
+                        <option value=""> States | English</option>
+                        <option value="">United States | Español</option>
+                        <option value="">Canada | English</option>
+                        <option value="">Canada | Français</option>
+                        <option value="">Mexico | Español</option>
+                    </optgroup>
+
+
+                    <optgroup label="Central America">
+                        <option value="">Guatemala | Español</option>
+                    </optgroup>
+
+
+                    <optgroup label="North America">
+                        <option value="">United States | English</option>
+                        <option value="">United States | Español</option>
+                        <option value="">Canada | English</option>
+                        <option value="">Canada | Français</option>
+                        <option value="">Mexico | Español</option>
+
+                    </optgroup>
+
+
+                    <optgroup label="Latin & South America">
+                        <option value="">Argentina | Español</option>
+                        <option value="">Brasil | Português</option>
+                        <option value="">Chile | Español</option>
+                        <option value="">Colombia | Español</option>
+                        <option value="">Ecuador | Español</option>
+                        <option value="">Paraguay | Español</option>
+                        <option value="">Peru | Español</option>
+                        <option value="">Uruguay | Español</option>
+                        <option value="">Venezuela | Español</option>
+                    </optgroup>
+
+
+                    <optgroup label="Europe & Middle East">
+                        <option valur="">Belgie/Belgique | Nederlands</option>
+                        <option valur="">Belgie/Belgique | Français</option>
+                        <option valur="">Danmark | Dansk</option>
+                        <option valur="">Deutschland | Deutsch</option>
+                        <option valur="">España | Español</option>
+                        <option valur="">France | Français</option>
+                        <option valur="">Ελλάδα/Greece | ελληνική</option>
+                        <option valur="">Ελλάδα/Greece | English</option>
+                        <option valur="">Ireland | English</option>
+                        <option valur="">Italia | Italiano</option>
+                        <option valur="">Nederland | Nederlands</option>
+                        <option valur="">Norge | Norsk</option>
+                        <option valur="">Österreich | Deutsch</option>
+                        <option valur="">Portugal | Português</option>
+                        <option valur="">Россия | Русский</option>
+                        <option valur="">Schweiz | Deutsch</option>
+                        <option valur="">Suisse | Français</option>
+                        <option valur="">Suomi | Suomi</option>
+                        <option valur="">Sverige | Svenska</option>
+                        <option value="">Türkiye | Türkçe</option>
+                        <option value="">United Kingdom | English</option>
+                    </optgroup>
+
+
+                    <optgroup label="Africa">
+                        <option value="">South Africa | English</option>
+                    </optgroup>
+
+
+                    <optgroup label="Asia">
+                        <option value="">日本 | 日本語</option>
+                        <option value="">대한민국 | 한국어</option>
+                        <option value="">台灣 | 繁體中文</option>
+                        <option value="">中国大陆 | 简体中文</option>
+                        <option value="">香港 | 繁體中文</option>
+                        <option value="">India | English</option>
+                    </optgroup>
+
+
+                    <optiongroup label="Oceania">
+                        <option value="">Australia | English</option>
+                        <option value="">New Zealand | English</option>
+                    </optiongroup>
+                </select>
+
+            </div>
+        </footer>
+
+
+    </div>
+</body>
+
+</html>

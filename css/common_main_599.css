@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+@media (max-width:599px) {
+    
+/*헤더*/
+#header_wrap {width: 100%; height: auto;    
+    background-color:#ba0c2f; margin:0 auto;  }
+
+header {z-index:1;
+
+    display:block;
+
+    float:left;
+
+    margin-top:-100px;
+
+    width:100%;
+
+    background-color:#ba0c2f;
+
+    transform:skew(0deg,-3deg);
+
+    position:absolute;
+
+    height:190px;
+
+    top:0; left:0; 
+
+    z-index:5;
+    
+}
+
+    header > .box {
+
+        display:block;
+
+        float:left;
+
+        margin:100px auto 200px;
+
+        width:100%;
+
+        
+
+        transform:skew(0deg,3deg); 
+        position: relative;
+        
+
+        height:70px;
+    }
+
+    .box > img {width:170px; height:105px; position:absolute; top:15px; left:-5px;}
+
+
+
+
+#header_in_box {width:100%; height:100%; display: flex;  flex-wrap:wrap; justify-content:space-between;  align-items:center; margin:0 auto;
+position: relative; top:0px; 
+}
+
+#header_in_box > h1 { width:100px; height:35px; }
+#header_in_box > h1 > a > img {width:100%; height:100%; margin-left:10px;}
+
+
+
+#ul_wrap {display:flex; width:100%;  display:none; }  
+
+#ul_wrap > ul { height:auto; display:flex; flex-direction:column; padding-left:10px;
+font-family: 'Cabin', sans-serif;  background-color: #ba0c2f; }
+
+#ul_wrap > ul > li > a {line-height: 60px;font-size:16px; text-decoration:none; color:#fff; display:block;}
+
+
+#ul_wrap > ul > li s > a > img {width:11px; height:11px; }
+
+#ul_wrap > ul > li > a > .icondown {font-size:13px;}
+
+.sns_box {width:100%; line-height: 50px; padding-left:10px; border-top:1px solid#fff; display:none;  background-color: #ba0c2f;}
+.sns_box > a {text-decoration:none;}
+
+
+
+.menu_open_btn {width:40px; height:25px; margin:0;  border:none; cursor:pointer; background-color:transparent; margin-right:10px; }
+.menu_open_btn > img {width:100%; height:100%;}
+
+
+
+
+
+/*-------------------------------------------------------------------*/
+
+
+/*푸터*/
+
+footer {background-color: #ba0c2f; width:100%; height:300px; display:flex; flex-wrap:wrap; flex-direction:column; align-content:center; }
+
+
+
+/*푸터 윗상자*/
+#info_detail_box {width:100%; height:80%;  display:flex; flex-wrap:wrap; justify-content:space-between; border-bottom: 1px solid #fff;}
+
+#p_farm_wrap > p {font-size:15px; line-height:25px; color:#fff; padding:15px; font-family: 'Cabin', sans-serif; }
+
+#fam_img_wrap_up_before {width:100%; height:auto; display:flex; justify-content: space-between; align-items:center; padding: 0 15px 0 15px;}
+#fam_img_wrap_up_before > img {width:140px; height:35px;}
+
+#fam_img_wrap_up_after {display:none;}
+
+#fam_img_wrap_down {display:none;}
+
+
+
+
+#list {width:100%; height:40px;  padding-top:25px;}
+#list > ul {width:100%; height:100%; margin:0 auto; display:flex; justify-content:space-around;  }
+#list > ul > li {color:#fff; font-family: 'Cabin', sans-serif;}
+#list > ul > li a {font-size: 15px; text-decoration: none; color:#fff; font-weight:bold; }
+
+
+
+/*푸터 아래 상자*/
+#info_kellogg_box {width:100%; height:20%; 
+    display:flex; align-items:center; 
+}
+
+#info_kellogg_box > a > img {width:115px; height:36px; display:none; }
+
+
+
+#info_kellogg_box > select {width:220px; height:25px; background-color: #ba0c2f; color:#fff; display:none;
+border:1px solid #fff; margin:0; font-family: 'Cabin', sans-serif;
+}
+
+
+
+
+#info_kellogg_box > #copyright {width:737px; height:25px;  
+    color:#fff; font-size:13px; display:flex; justify-content: center; align-items:center; font-family: 'Cabin', sans-serif;
+}
+
+
+
+
+#info_kellogg_box > #sns {width:92px; height:25px; display:none;}
+#info_kellogg_box > #sns > a > img {width:24px; height:24px;}
+
+
+
+}

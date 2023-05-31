@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+@media (min-width:1260px) {
+/*헤더*/
+#header_wrap {width: 100%; height: auto; }
+
+header { z-index:1;
+
+    display:block;
+
+    float:left;
+
+    margin-top:-200px;
+
+    width:100%;
+
+    background-color:#BA0C2F;
+
+    transform:skew(0deg,-2deg);
+
+    position:absolute;
+
+    height:345px;
+
+    top:0; left:0; 
+
+    z-index:5;
+    
+}
+
+    header > .box {
+
+        display:block;
+
+        float:left;
+
+        margin:100px auto 200px;
+
+        width:100%;
+
+        padding:0 5%;
+        
+        transform:skew(0deg,2deg); 
+        position: relative;
+    }
+
+    .box > img {width:340px; height:215px; position:absolute; top:100px; left:0px;}
+
+
+
+
+#header_in_box {width:100%; height:90px; display: flex; flex-direction:row; justify-content:space-between; 
+position: relative; top:100px; 
+}
+
+#header_in_box > h1 { width:10%; height:48px; margin-left:30px;}
+#header_in_box > h1 > a > img {width:100%; height:100%;}
+
+
+
+#ul_wrap {width:80%;  height:40px;  background-color:orange; position:relative; display:block;}   
+
+#ul_wrap > ul {width:50%; height:100%; display:flex; display:flex; flex-direction:row; font-family: 'Cabin', sans-serif; width:100%; height:100%;}
+#ul_wrap > ul > li {padding:0 3%; height:100%;}
+
+
+#ul_wrap > ul > li > a {font-size:16px; margin-right:5px; text-decoration:none; color:#fff; width:100%; height:100%;  display:flex; align-items:center;}
+
+#ul_wrap > ul > li > a > .icondown {font-size:13px;}
+
+
+.sns_box {width:20%; height:100%;  display:flex; border:none; padding:0 30px; justify-content:space-evenly;  position:absolute; top:0; right:0;}
+.sns_box > a {text-decoration:none; }
+
+
+/*목록사진*/
+.menu_open_btn {width:45px; height:25px;  border:none; cursor:pointer; background-color:transparent; display:none;}
+.menu_open_btn > img {width:100%; height:100%;}
+
+
+
+
+/*-------------------------------------------------------------------*/
+
+
+/*푸터*/
+
+footer { width:100%; height:200px; display:flex; flex-direction:column;  align-content:center; }
+
+
+
+/*푸터 윗상자*/
+#info_detail_box {width:1180px; height:120px;   display:flex; border-bottom: 1px solid #fff;}
+
+#list {width:1180px; height:40px;  padding:0; }
+#list > ul {width:40%; height:100%; display:flex; justify-content:space-between;  padding-top:20px;}
+#list > ul > li {color:#fff; font-family: 'Cabin', sans-serif; }
+#list > ul > li a {font-size: 14px; text-decoration: none; color:#fff; font-weight:bold;}
+
+
+#p_farm_wrap {width:100%; height:60px; display:flex;  }
+#p_farm_wrap > p { width:80%; height:60px; padding:0; display:flex; align-items:center; font-size:14px; line-height:20px; color:#fff;  font-family: 'Cabin', sans-serif;}
+
+#fam_img_wrap_up_after { width:130px; height:60px; display:flex; align-items:center; }
+#fam_img_wrap_up_after > img {width:100%; height:40px;}
+
+#fam_img_wrap_up_before {display:none;}
+#fam_img_wrap_down {display:none;}
+
+
+
+
+
+/*푸터 아래 상자*/
+#info_kellogg_box {width:1180px; height:80px; background-color: #ba0c2f;;
+    display:flex; flex-wrap:wrap; align-items:center; justify-content: space-between;
+}
+
+#info_kellogg_box > a > img {width:115px; height:36px; }
+
+
+
+#info_kellogg_box > select {width:220px; height:25px; background-color: #ba0c2f; color:#fff;
+border:1px solid #fff; margin:0; font-family: 'Cabin', sans-serif; display:flex;
+}
+
+
+
+
+#info_kellogg_box > #copyright {width:700px; height:25px;  
+    color:#fff; font-size:13px; display:flex; justify-content: center; align-items:center; font-family: 'Cabin', sans-serif;
+}
+
+
+
+
+#info_kellogg_box > #sns {width:92px; height:25px; }
+#info_kellogg_box > #sns > a > img {width:24px; height:24px;}
+
+
+}
